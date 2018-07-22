@@ -6,6 +6,9 @@ public class Coordinate <T> {
     private int x;
     private int y;
 
+    //излучение в ячейке
+    private double i = 0;
+
     //источник/приемник
     private T object;
 
@@ -38,5 +41,15 @@ public class Coordinate <T> {
 
     public void setObject(T object) {
         this.object = object;
+    }
+
+    //добавление интенсивности к итоговой светимости ячейки
+    public void addI(double i) {
+        this.i += i;
+    }
+
+    //поучение светимости ячейки
+    public double getI() {
+        return i;
     }
 }
