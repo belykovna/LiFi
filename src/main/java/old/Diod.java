@@ -1,5 +1,4 @@
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+package old;
 
 public class Diod extends Istochnik {
     Diod (String img, int types, double xs, double ys) {

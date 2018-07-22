@@ -1,3 +1,5 @@
+package old;
+
 public class Wall extends Subject {
     Wall (double x,double y,double z, double l, double w, double h) {
         super("img/wall.png", 1, 0, 1, x,  y,  z,  l,  w,  h);

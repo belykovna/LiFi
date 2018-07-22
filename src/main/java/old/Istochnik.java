@@ -1,3 +1,4 @@
+package old;
 
 public class Istochnik extends Subject {
     int i;

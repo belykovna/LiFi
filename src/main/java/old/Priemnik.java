@@ -1,3 +1,5 @@
+package old;
+
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -36,7 +38,7 @@ public class Priemnik {
                if (cx>= MainGUI.Obstacles.get(j).x && cx<=(MainGUI.Obstacles.get(j).x+ MainGUI.Obstacles.get(j).w) &&
                         cy>= MainGUI.Obstacles.get(j).y && cy<=(MainGUI.Obstacles.get(j).y+ MainGUI.Obstacles.get(j).h)) {
                     ch = false;
-                    //System.out.println("Priemnik: Луч под углом "+alpha+" врезался в "+MainGUI.Obstacles.get(j).getClass());
+                    //System.out.println("old.Priemnik: Луч под углом "+alpha+" врезался в "+old.MainGUI.Obstacles.get(j).getClass());
 
                    if (MainGUI.Obstacles.get(j) instanceof Istochnik) {
                         Istochnik ist = (Istochnik) MainGUI.Obstacles.get(j);
@@ -54,7 +56,7 @@ public class Priemnik {
                     return new double[] {en[0],sx,sy,cx,cy,s};
                 }
                 if (cx>800 || cy>600) {
-                    System.out.println("Priemnik: Луч под углом "+alpha+" вышел за границы");
+                    System.out.println("old.Priemnik: Луч под углом "+alpha+" вышел за границы");
                     System.exit(0);
                 }
             }
